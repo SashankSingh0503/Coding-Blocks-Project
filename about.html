@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling for the body */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #2c3e50);
+            color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container for the about page */
+        .about-container {
+            background: #2c3e50;
+            border-radius: 12px;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        .about-header {
+            margin-bottom: 30px;
+        }
+
+        .about-header h1 {
+            font-size: 2.5em;
+            background: -webkit-linear-gradient(45deg, #3498db, #e74c3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .about-header p {
+            color: #95a5a6;
+            font-size: 1.2em;
+        }
+
+        /* Main content styling */
+        .about-content {
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .about-content h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #ecf0f1;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            color: #bdc3c7;
+        }
+
+        /* Back to Dashboard button styling */
+        .back-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1.1em;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .about-container {
+                padding: 20px;
+            }
+
+            .about-content h2 {
+                font-size: 1.8em;
+            }
+
+            .back-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <div class="about-header">
+            <h1>About Us</h1>
+            <p>Learn more about our mission and team</p>
+        </div>
+        <div class="about-content">
+            <h2>Our Mission</h2>
+            <p>
+                We are dedicated to providing the best security solutions to ensure the safety and peace of mind of our clients.
+                Our team works tirelessly to innovate and improve our systems, ensuring that you are always protected.
+            </p>
+            <h2>Our Team</h2>
+            <p>
+                Our team consists of experts in various fields, including technology, security, and customer support.
+                We collaborate closely to deliver cutting-edge solutions and exceptional service.
+            </p>
+            <h2>Contact Us</h2>
+            <p>
+                Feel free to reach out if you have any questions or need support. We're here to help!
+            </p>
+        </div>
+        <form action="/Dashboard" method="post">
+            <a href="index.html" class="back-button">Back to Dashboard</a>
+        </form>
+    </div>
+</body>
+</html>
