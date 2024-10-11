@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Container for centering the content */
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Styling the heading */
+h1 {
+    margin-bottom: 40px;
+    color: #bb86fc;
+    font-size: 36px;
+}
+
+/* Container for the forms */
+.forms-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Styling each form */
+.form-option {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    border: none;
+}
+
+.form-option h2 {
+    color: #bb86fc;
+    margin-bottom: 15px;
+}
+
+.form-option p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #bb86fc;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #9e67d0;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project</h1>
+        <div class="forms-container">
+            <form action="/optionsignin" method="post" class="form-option">
+                <h2>Sign In</h2>
+                <p>Already have an account? Access your account here.</p>
+                <button type="submit">Go to Sign In</button>
+            </form>
+            <form action="optionsingup" method="post" class="form-option">
+                <h2>Sign Up</h2>
+                <p>New here? Create a new account to get started.</p>
+                <button type="submit">Go to Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
